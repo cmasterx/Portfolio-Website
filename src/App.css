@@ -1,38 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+  --th-yellow: #ffcc00; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #84fab0, #8fd3f4, #e73c7e);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  /* font: normal 10px sans-serif; */
+  /* position: flex; */
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  /* background-position: center; */
+  animation: gradient 15s ease infinite;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* width: 100%; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+@keyframes shadowElevate {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: rgba(89, 93, 50, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+
+.Card {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  top: 190px;
+  /* border: 2px solid black; */
+  background: #34495e;
+  position: absolute;
+  /* margin: 50%; */
+  padding: 10px;
   color: white;
+  margin: 0 auto;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 15px;
+  /* animation: 0s ease-out 1s 1 shadowElevate; */
 }
 
-.App-link {
-  color: #61dafb;
+.Title {
+  padding: 0px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* margin-block: 0px; */
+
+.TitleRow {
+  justify-content: center;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bio {
+  font-size: 20px;
+  padding: 0px 7% 10px;
+  text-align: left;
+  justify-content: left;
+}
+
+.Sentence {
+  padding: 0px;
+  /* margin: 10px; */
+  display: flex;
+}
+
+.yellow {
+  color: var(--th-yellow);
+}
+
+.yellow-box {
+  color: #34495e;
+  background-color: var(--th-yellow);
+  padding: 0px 7px;
+  font: 400;
+}
+
+.message {
+  padding: 0px;
+  margin: 10px 10px;
 }
