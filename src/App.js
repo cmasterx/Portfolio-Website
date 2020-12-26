@@ -30,7 +30,7 @@ var describer = [
   'Developer',
   'Computer Engineer',
   'Pastry Chef',
-  'Hobbyist',
+  'Maker',
   'Student'
 ]
 setInterval(() => {
