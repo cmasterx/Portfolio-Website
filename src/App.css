@@ -49,8 +49,9 @@ body {
 
 
 .Card {
-  width: 400px;
+  width: 450px;
   height: 400px;
+  max-width: 80%;
   text-align: center;
   top: 190px;
   /* border: 2px solid black; */
@@ -80,7 +81,7 @@ body {
 
 .bio {
   font-size: 20px;
-  padding: 0px 7% 10px;
+  padding: 0px 10% 10px;
   text-align: left;
   justify-content: left;
 }
