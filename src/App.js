@@ -29,9 +29,9 @@ var describer_idx = 0;
 var describer = [
   'Developer',
   'Computer Engineer',
+  'Student',
   'Pastry Chef',
-  'Maker',
-  'Student'
+  'Maker'
 ]
 setInterval(() => {
   let txt = document.getElementById('category')

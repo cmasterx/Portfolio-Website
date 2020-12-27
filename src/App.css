@@ -70,7 +70,7 @@ body {
 .Title {
   padding: 0px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 /* margin-block: 0px; */
 
@@ -82,6 +82,7 @@ body {
 .bio {
   font-size: 20px;
   padding: 0px 10% 10px;
+  height: 5em;
   text-align: left;
   justify-content: left;
 }
